@@ -167,7 +167,6 @@ class DynamoDOWN extends AbstractLevelDOWN {
     const value = parse({M: item})
     const key = value[this._schema.range.name]
 
-    delete value[this._schema.range.name]
     delete value[this._schema.hash.name]
 
     return {key, value}
